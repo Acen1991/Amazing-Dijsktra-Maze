@@ -7,7 +7,34 @@
     </head>
 	<body>
 	    <h1> Applet Maze </h1>
-	    
+	    <CENTER><object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" 
+        width="200" height="200">
+  <param name="archive" value="MonAppli.jar">
+  <param name="codebase" value="jarApplets">
+  <param name="code" value="MonAppli">
+  <param name="fichier" value="donnees.txt">	    
+
+  <!--[if gte IE 7]> <!-->
+  <object type="application/x-java-applet"
+          classid="java:MonAppli.class"
+          archive="maze-applet.jar"
+          codebase="jarApplets"
+          width="200" height="200">
+    <!-- Konqueror browser needs the following param -->
+    <param name="archive" value="maze-applet.jar">
+    <param name="code" value="MonAppli">
+    <param name="fichier" value="donnees.txt">
+    <!-- Safari browser needs the following param -->
+    <param name="JAVA_CODEBASE" value="jarApplets">
+    <param name="fichier" value="donnees.txt">
+
+    <font color="red">alt : l'applet n'est pas visible par votre navigateur ; pour voir l'application, vous devez télécharger le code, le compiler et l'exécuter
+  </object>
+  <!--<![endif]-->
+  <!--[if lt IE 7]>   
+  <font color="red">alt : l'applet n'est pas visible par votre navigateur ; pour voir l'application, vous devez télécharger le code, le compiler et l'exécuter
+  <![endif]-->
+</object></center>
 	    
 	</body>
 </html>
